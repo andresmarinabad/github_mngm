@@ -5,6 +5,15 @@ terraform {
       version = "6.6.0"
     }
   }
+
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "andres-marin-abad"
+
+    workspaces {
+      name = "github-mngm"
+    }
+  }
 }
 
 provider "github" {
