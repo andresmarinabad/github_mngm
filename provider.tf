@@ -5,17 +5,24 @@ terraform {
       version = "6.6.0"
     }
   }
+
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "andres-marin-abad"
 
     workspaces {
-      name = "github-mngm-comu"
+      name = "github-mngm"
     }
   }
 }
 
 provider "github" {
   token = var.token
-  owner = "ComunidadX"
+  owner = "andresmarinabad"
+}
+
+provider "github" {
+  alias = "comu"
+  token = var.token
+  owner = "Comu10"
 }
