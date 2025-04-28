@@ -1,17 +1,3 @@
-module "github_mngm" {
-  source      = "./modules/github"
-  name        = "github_mngm"
-  description = "Terraform project to manage my resources"
-  visibility  = "public"
-}
-
-module "telegram_bot" {
-  source      = "./modules/github"
-  name        = "telegram_bot"
-  description = "Python bot for telegram with terraform form infra deploy"
-  visibility  = "public"
-}
-
 module "agapes" {
   source = "./modules/github"
   name        = "agapes"
