@@ -1,5 +1,5 @@
 module "agapes" {
-  source = "./modules/github"
+  source      = "./modules/github"
   name        = "agapes"
   description = "HTML project to publish agapes list"
   visibility  = "public"
@@ -9,7 +9,7 @@ module "agapes" {
 }
 
 module "grupos" {
-  source = "./modules/github"
+  source      = "./modules/github"
   name        = "grupos"
   description = "HTML project to publish groups list"
   visibility  = "public"

@@ -15,7 +15,7 @@ resource "github_repository" "repository" {
   delete_branch_on_merge      = false
   has_discussions             = false
   has_downloads               = false
-  has_issues                  = false
+  has_issues                  = var.has_issues
   has_projects                = false
   has_wiki                    = false
 

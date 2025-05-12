@@ -17,6 +17,8 @@ module "familyprogressweb" {
   name        = "familyprogressweb"
   description = "Show your kids next birthday within a friendly interface"
   visibility  = "public"
+
+  has_issues = true
 }
 
 module "andresmarinabad" {

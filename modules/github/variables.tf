@@ -29,3 +29,9 @@ variable "pages" {
   }
 }
 
+variable "has_issues" {
+  description = "Has issues yes/no"
+  type = bool
+  default = false
+}
+
