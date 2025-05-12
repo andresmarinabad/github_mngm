@@ -12,6 +12,13 @@ module "telegram_bot" {
   visibility  = "public"
 }
 
+module "quinigol_bot" {
+  source      = "./modules/github"
+  name        = "quiniela_quinigol_bot"
+  description = "Python bot for telegram with terraform. Calculates quiniela results for a group of friends"
+  visibility  = "public"
+}
+
 module "familyprogressweb" {
   source      = "./modules/github"
   name        = "familyprogressweb"
