@@ -55,3 +55,10 @@ module "fotosblog" {
   description = "Download pictures from my kids blog's school"
   visibility  = "public"
 }
+
+module "ci-templates" {
+  source = "./modules/github"
+  name = "ci-templates"
+  description = "Common CI Actions and Workflows templates to extend for other repos"
+  visibility = "public"
+}
