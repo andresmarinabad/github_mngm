@@ -62,3 +62,10 @@ module "ci-templates" {
   description = "Common CI Actions and Workflows templates to extend for other repos"
   visibility = "public"
 }
+
+module "bookline-test" {
+  source = "./modules/github"
+  name = "bookline-test"
+  description = "Technical test for bookline"
+  visibility = "public"
+}
