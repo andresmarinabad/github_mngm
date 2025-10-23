@@ -6,14 +6,8 @@ terraform {
     }
   }
 
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "andres-marin-abad"
-
-    workspaces {
-      name = "github-mngm"
-    }
-  }
+  backend "local" {}
+  
 }
 
 provider "github" {
@@ -25,4 +19,10 @@ provider "github" {
   alias = "comu"
   token = var.token
   owner = "Comu10"
+}
+
+provider "github" {
+  alias = "guild"
+  token = var.token
+  owner = "CodeForgeGuild"
 }

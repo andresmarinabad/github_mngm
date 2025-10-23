@@ -1,0 +1,3518 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 34,
+  "lineage": "6d1a8690-81e8-6f82-21ee-18a43af33e86",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"1b8cf5300ddd4c0d99c1320853bc599f1bbfcbe427d72f7399414dcbb955c212\"",
+            "id": "FamilyLedger:main",
+            "ref": "refs/heads/main",
+            "repository": "FamilyLedger",
+            "sha": "4104a50aaf344322e702aeca371ee1bf3cad49ee",
+            "source_branch": "main",
+            "source_sha": "44d21ab2da933fdd12f33a40d5e03194b0d868e0"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"4def29a92805d189ad5baa96be1ac54e2754f5127fc3f78eb3b909bc3daa710a\"",
+            "id": "FamilyLedger",
+            "rename": false,
+            "repository": "FamilyLedger"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_branch.main",
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"87277f0d023082a0aa877b78aa659e08198ac2060ebdadee45fba2b2ae026344\"",
+            "id": "FamilyLedger:major",
+            "name": "major",
+            "repository": "FamilyLedger",
+            "url": "https://api.github.com/repos/andresmarinabad/FamilyLedger/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"a3401820d5cbc88e264047d2375f01ae418cac38c0440c51f2e7af500e86ba88\"",
+            "id": "FamilyLedger:minor",
+            "name": "minor",
+            "repository": "FamilyLedger",
+            "url": "https://api.github.com/repos/andresmarinabad/FamilyLedger/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"006b770d360950437b272dbb76326a46a7172230424852e0cbe156e1efde5615\"",
+            "id": "FamilyLedger:patch",
+            "name": "patch",
+            "repository": "FamilyLedger",
+            "url": "https://api.github.com/repos/andresmarinabad/FamilyLedger/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "FamilyLedger is a family accounting app that imports transactions from a CSV file and organizes them into an Excel spreadsheet, grouping expenses by categories to help track and manage the family budget.",
+            "etag": "W/\"4def29a92805d189ad5baa96be1ac54e2754f5127fc3f78eb3b909bc3daa710a\"",
+            "full_name": "andresmarinabad/FamilyLedger",
+            "git_clone_url": "git://github.com/andresmarinabad/FamilyLedger.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/FamilyLedger",
+            "http_clone_url": "https://github.com/andresmarinabad/FamilyLedger.git",
+            "id": "FamilyLedger",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "FamilyLedger",
+            "node_id": "R_kgDOOL6WqQ",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/FamilyLedger/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/FamilyLedger/pages"
+              }
+            ],
+            "primary_language": "Python",
+            "private": false,
+            "repo_id": 952014505,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/FamilyLedger.git",
+            "svn_url": "https://github.com/andresmarinabad/FamilyLedger",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "FamilyLedger",
+            "repository": "FamilyLedger"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.FamilyLedger",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "4104a50aaf344322e702aeca371ee1bf3cad49ee",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "FamilyLedger/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "FamilyLedger",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.FamilyLedger.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"dc417f4b12f228625e90cd01cff05ac2962e66ed4251f50daba1e00f568e7efa\"",
+            "id": "agapes:main",
+            "ref": "refs/heads/main",
+            "repository": "agapes",
+            "sha": "ec9b3f4e4fae4cc3958ff4c073391d35d56c8720",
+            "source_branch": "main",
+            "source_sha": "d823af50b8c41ac0157750e46304f4ee11b512a4"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"876a320bbe229f0464229facb900509af4ab743a49617496441286148181e011\"",
+            "id": "agapes",
+            "rename": false,
+            "repository": "agapes"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_branch.main",
+            "module.agapes.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"f4cd74e57f105dbfac8a7c8b80c4979ce03da31e37d51b6898e86fd81240af6b\"",
+            "id": "agapes:major",
+            "name": "major",
+            "repository": "agapes",
+            "url": "https://api.github.com/repos/Comu10/agapes/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"68a5cc9b3851d8242a2e759348d9758074f790a9e6e3bdcc06f9bf617722e972\"",
+            "id": "agapes:minor",
+            "name": "minor",
+            "repository": "agapes",
+            "url": "https://api.github.com/repos/Comu10/agapes/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"9dca3672508241b386eb76c3ae958f49641b167f6a5b65cea4fdb075e8eec888\"",
+            "id": "agapes:patch",
+            "name": "patch",
+            "repository": "agapes",
+            "url": "https://api.github.com/repos/Comu10/agapes/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "HTML project to publish agapes list",
+            "etag": "W/\"876a320bbe229f0464229facb900509af4ab743a49617496441286148181e011\"",
+            "full_name": "Comu10/agapes",
+            "git_clone_url": "git://github.com/Comu10/agapes.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/Comu10/agapes",
+            "http_clone_url": "https://github.com/Comu10/agapes.git",
+            "id": "agapes",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "agapes",
+            "node_id": "R_kgDOOT-2Kw",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://comu10.github.io/agapes/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/Comu10/agapes/pages"
+              }
+            ],
+            "primary_language": "HTML",
+            "private": false,
+            "repo_id": 960476715,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "disabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "disabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:Comu10/agapes.git",
+            "svn_url": "https://github.com/Comu10/agapes",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "agapes",
+            "repository": "agapes"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.agapes",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "ec9b3f4e4fae4cc3958ff4c073391d35d56c8720",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "agapes/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "agapes",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.agapes.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"ed3e068b169a0c4b9fa031ad2027a509bc1e17db8f74554f01ad396ef8e1080f\"",
+            "id": "andresmarinabad:main",
+            "ref": "refs/heads/main",
+            "repository": "andresmarinabad",
+            "sha": "d51004eb4702d3e5dc8e78996e4fbfa68a82df75",
+            "source_branch": "main",
+            "source_sha": "2387970394cef42ef8cbcfaf047f6309d6334f4c"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"3ffe3f1ab85331a974219dc49ead13016108de1f8d702227a27803241b25e916\"",
+            "id": "andresmarinabad",
+            "rename": false,
+            "repository": "andresmarinabad"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_branch.main",
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"309383fc276bda70070acbbc18b2e30891d03242296be165182499d54481929f\"",
+            "id": "andresmarinabad:major",
+            "name": "major",
+            "repository": "andresmarinabad",
+            "url": "https://api.github.com/repos/andresmarinabad/andresmarinabad/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"e12b68df50ed7e66d7d6bc56b787bbb81a4ddd5b9f3fe77aadde0e38c66ae438\"",
+            "id": "andresmarinabad:minor",
+            "name": "minor",
+            "repository": "andresmarinabad",
+            "url": "https://api.github.com/repos/andresmarinabad/andresmarinabad/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"d27c02839cee80ad3043093d3affcebfa6b18592053b9da8e6f30f34d65628bf\"",
+            "id": "andresmarinabad:patch",
+            "name": "patch",
+            "repository": "andresmarinabad",
+            "url": "https://api.github.com/repos/andresmarinabad/andresmarinabad/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "My personal portfolio page in GitHub",
+            "etag": "W/\"3ffe3f1ab85331a974219dc49ead13016108de1f8d702227a27803241b25e916\"",
+            "full_name": "andresmarinabad/andresmarinabad",
+            "git_clone_url": "git://github.com/andresmarinabad/andresmarinabad.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/andresmarinabad",
+            "http_clone_url": "https://github.com/andresmarinabad/andresmarinabad.git",
+            "id": "andresmarinabad",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "andresmarinabad",
+            "node_id": "R_kgDOOIk5NQ",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/andresmarinabad/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "built",
+                "url": "https://api.github.com/repos/andresmarinabad/andresmarinabad/pages"
+              }
+            ],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 948517173,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/andresmarinabad.git",
+            "svn_url": "https://github.com/andresmarinabad/andresmarinabad",
+            "template": [],
+            "topics": [
+              "html",
+              "terraform"
+            ],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "andresmarinabad",
+            "repository": "andresmarinabad"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.andresmarinabad",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "d51004eb4702d3e5dc8e78996e4fbfa68a82df75",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "andresmarinabad/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "andresmarinabad",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.andresmarinabad.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"491486a8aa62a94ea3ccc71d4270484b5c1e14a3b089484c3ffc13ebd2370b1d\"",
+            "id": "bookline-test:main",
+            "ref": "refs/heads/main",
+            "repository": "bookline-test",
+            "sha": "742595fc654bfb1c0d17f183c5cb0630a34165d1",
+            "source_branch": "main",
+            "source_sha": "2c5a5e5b58a3a9228a8673afa9140e81574c17a6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"5a4c49337020fa698eafba333b83953d6e8e1897302ec1c5f6eba4b838d6fd1e\"",
+            "id": "bookline-test",
+            "rename": false,
+            "repository": "bookline-test"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_branch.main",
+            "module.bookline-test.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"c32a632bc2f7788b4a75c621f005dbc17c28efaa2d66bf16a49c9d0c2fcbe0db\"",
+            "id": "bookline-test:major",
+            "name": "major",
+            "repository": "bookline-test",
+            "url": "https://api.github.com/repos/andresmarinabad/bookline-test/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"72759d7daf9b1c9e0632e724d8786ea7b3d4e7aa0be9492b40fc9ce6a4d08d3c\"",
+            "id": "bookline-test:minor",
+            "name": "minor",
+            "repository": "bookline-test",
+            "url": "https://api.github.com/repos/andresmarinabad/bookline-test/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"f964f9913ae1865b38c283dac7af25145047f26bd09b1058a9552f960e3d5622\"",
+            "id": "bookline-test:patch",
+            "name": "patch",
+            "repository": "bookline-test",
+            "url": "https://api.github.com/repos/andresmarinabad/bookline-test/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Technical test for bookline",
+            "etag": "W/\"5a4c49337020fa698eafba333b83953d6e8e1897302ec1c5f6eba4b838d6fd1e\"",
+            "full_name": "andresmarinabad/bookline-test",
+            "git_clone_url": "git://github.com/andresmarinabad/bookline-test.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/bookline-test",
+            "http_clone_url": "https://github.com/andresmarinabad/bookline-test.git",
+            "id": "bookline-test",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "bookline-test",
+            "node_id": "R_kgDOQD5qlw",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/bookline-test/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/bookline-test/pages"
+              }
+            ],
+            "primary_language": "Python",
+            "private": false,
+            "repo_id": 1077832343,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/bookline-test.git",
+            "svn_url": "https://github.com/andresmarinabad/bookline-test",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "bookline-test",
+            "repository": "bookline-test"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.bookline-test",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "742595fc654bfb1c0d17f183c5cb0630a34165d1",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "bookline-test/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "bookline-test",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.bookline-test.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.ci-actions",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "GitHub Actions Catalog",
+            "etag": "W/\"7bf2920e882396201775eaf9c93870c094944cee54c291695840246dc2bad49a\"",
+            "full_name": "CodeForgeGuild/ci-actions",
+            "git_clone_url": "git://github.com/CodeForgeGuild/ci-actions.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/CodeForgeGuild/ci-actions",
+            "http_clone_url": "https://github.com/CodeForgeGuild/ci-actions.git",
+            "id": "ci-actions",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "ci-actions",
+            "node_id": "R_kgDOQGW0BQ",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://codeforgeguild.github.io/ci-actions/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/CodeForgeGuild/ci-actions/pages"
+              }
+            ],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 1080407045,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "disabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "disabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:CodeForgeGuild/ci-actions.git",
+            "svn_url": "https://github.com/CodeForgeGuild/ci-actions",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.ci-actions",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "ci-actions",
+            "repository": "ci-actions"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.ci-actions.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.ci-actions",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "e3181b1de0b2403fbb72e90a4d34072df3810d0c",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "ci-actions/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "ci-actions",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.ci-actions.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.ci-templates",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"6d6ac8287fc0ba8691e5082e1cfb03583bbe59c2b46a49f52ee81ba9667179b0\"",
+            "id": "ci-templates:main",
+            "ref": "refs/heads/main",
+            "repository": "ci-templates",
+            "sha": "e7f42e1460aa5396cbb97e681cedb4d0b117cd95",
+            "source_branch": "main",
+            "source_sha": "1b125bb17f59b6b49b7c948ea91ca2f7092e88cf"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.ci-templates.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.ci-templates",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Common CI Actions and Workflows templates to extend for other repos",
+            "etag": "W/\"d8eb1b83fcd17c3861adcd786339be68b9cafdf59119748b72ac7a4892d2abaa\"",
+            "full_name": "andresmarinabad/ci-templates",
+            "git_clone_url": "git://github.com/andresmarinabad/ci-templates.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/ci-templates",
+            "http_clone_url": "https://github.com/andresmarinabad/ci-templates.git",
+            "id": "ci-templates",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "ci-templates",
+            "node_id": "R_kgDOO6aAOw",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/ci-templates/",
+                "source": [
+                  {
+                    "branch": "master",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/ci-templates/pages"
+              }
+            ],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 1000767547,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/ci-templates.git",
+            "svn_url": "https://github.com/andresmarinabad/ci-templates",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"e9a986b68e4138f39edca2a6727cd64be214f42eabca7d4cc3692ab86ad70d2d\"",
+            "id": "familyprogressweb:main",
+            "ref": "refs/heads/main",
+            "repository": "familyprogressweb",
+            "sha": "51d715d0cb9a932800bdc95044e8024a60bf02d9",
+            "source_branch": "main",
+            "source_sha": "d9d223799101408d896c4edae2f03bb65538bdd6"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"ab6b3ac195d42d7a08966fbfd427c2be48f6424c370e02a221e3993c754b4325\"",
+            "id": "familyprogressweb",
+            "rename": false,
+            "repository": "familyprogressweb"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_branch.main",
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"5a3eb584e5f311760220404edabc3455598c2f51a238e30a7672cda37e8c5b97\"",
+            "id": "familyprogressweb:major",
+            "name": "major",
+            "repository": "familyprogressweb",
+            "url": "https://api.github.com/repos/andresmarinabad/familyprogressweb/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"9c71673f2d6810f7c834e308962d7b67784e1a099b62a08ace14d545c6d29c62\"",
+            "id": "familyprogressweb:minor",
+            "name": "minor",
+            "repository": "familyprogressweb",
+            "url": "https://api.github.com/repos/andresmarinabad/familyprogressweb/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"6119aa75b47efe156689358f68f68b90bf39efe5928590b71d15f19d83773905\"",
+            "id": "familyprogressweb:patch",
+            "name": "patch",
+            "repository": "familyprogressweb",
+            "url": "https://api.github.com/repos/andresmarinabad/familyprogressweb/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Show your kids next birthday within a friendly interface",
+            "etag": "W/\"ab6b3ac195d42d7a08966fbfd427c2be48f6424c370e02a221e3993c754b4325\"",
+            "full_name": "andresmarinabad/familyprogressweb",
+            "git_clone_url": "git://github.com/andresmarinabad/familyprogressweb.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": true,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/familyprogressweb",
+            "http_clone_url": "https://github.com/andresmarinabad/familyprogressweb.git",
+            "id": "familyprogressweb",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "familyprogressweb",
+            "node_id": "R_kgDOMHBgyA",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/familyprogressweb/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "built",
+                "url": "https://api.github.com/repos/andresmarinabad/familyprogressweb/pages"
+              }
+            ],
+            "primary_language": "HTML",
+            "private": false,
+            "repo_id": 812671176,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/familyprogressweb.git",
+            "svn_url": "https://github.com/andresmarinabad/familyprogressweb",
+            "template": [],
+            "topics": [
+              "firebase",
+              "github-actions",
+              "python",
+              "terraform"
+            ],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "familyprogressweb",
+            "repository": "familyprogressweb"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.familyprogressweb",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "f055608593ee9683cdbd35c4c7f8c6f22797aa2f",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "familyprogressweb/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "familyprogressweb",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.familyprogressweb.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"ce904c61e520611984033787ccb549f106214f769ed013628f3a7e90a032d233\"",
+            "id": "fotosblog:main",
+            "ref": "refs/heads/main",
+            "repository": "fotosblog",
+            "sha": "3385a5f6f79f6d33de196449a58d7a9500b12ebd",
+            "source_branch": "main",
+            "source_sha": "2fa3922a5467b59ea9cd1188de250a8ec06bd5d4"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"64263a2d6c09275ee3e483effe338e6173f78d679d87edf0951d347e09f09931\"",
+            "id": "fotosblog",
+            "rename": false,
+            "repository": "fotosblog"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_branch.main",
+            "module.fotosblog.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"bf675b6be0c4cad420d861634ccde38dda4326b9d9abbf5fcc757eb7850ef066\"",
+            "id": "fotosblog:major",
+            "name": "major",
+            "repository": "fotosblog",
+            "url": "https://api.github.com/repos/andresmarinabad/fotosblog/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"697c2a2e62f9102bf192e79cf8b76969b459145ce0d2771b34ed50085b396ec3\"",
+            "id": "fotosblog:minor",
+            "name": "minor",
+            "repository": "fotosblog",
+            "url": "https://api.github.com/repos/andresmarinabad/fotosblog/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"ed471800b29e95a21a0d412e99a21f616b6189a472f7e6324562c93da5bcc4fd\"",
+            "id": "fotosblog:patch",
+            "name": "patch",
+            "repository": "fotosblog",
+            "url": "https://api.github.com/repos/andresmarinabad/fotosblog/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Download pictures from my kids blog's school",
+            "etag": "W/\"64263a2d6c09275ee3e483effe338e6173f78d679d87edf0951d347e09f09931\"",
+            "full_name": "andresmarinabad/fotosblog",
+            "git_clone_url": "git://github.com/andresmarinabad/fotosblog.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/fotosblog",
+            "http_clone_url": "https://github.com/andresmarinabad/fotosblog.git",
+            "id": "fotosblog",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "fotosblog",
+            "node_id": "R_kgDOOK5f6A",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/fotosblog/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/fotosblog/pages"
+              }
+            ],
+            "primary_language": "Python",
+            "private": false,
+            "repo_id": 950951912,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/fotosblog.git",
+            "svn_url": "https://github.com/andresmarinabad/fotosblog",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "fotosblog",
+            "repository": "fotosblog"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.fotosblog",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "3385a5f6f79f6d33de196449a58d7a9500b12ebd",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "fotosblog/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "fotosblog",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.fotosblog.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"2af721bea2072faff8b79aca32681a5143c5c5ac86115646ab10b617a4b0e943\"",
+            "id": "github_mngm:main",
+            "ref": "refs/heads/main",
+            "repository": "github_mngm",
+            "sha": "96c647d2f7713fc7b32bc77f7441d618b4563e85",
+            "source_branch": "main",
+            "source_sha": "5561eef6ef51e753f0ea5a80828d11ecee933254"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"90b20c0b1966366456128324fceadc9b6ab304bbd1a6d25f3ba6aced22fa79d7\"",
+            "id": "github_mngm",
+            "rename": false,
+            "repository": "github_mngm"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_branch.main",
+            "module.github_mngm.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"63f076d30dd2640296ee31b5d52719d26db70f2cab2c399c25dbd577aea224d5\"",
+            "id": "github_mngm:major",
+            "name": "major",
+            "repository": "github_mngm",
+            "url": "https://api.github.com/repos/andresmarinabad/github_mngm/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"ee10f2d4d5f01746fff96225505b76c69e2aced2a4a51340c0b3a7c279e1c22c\"",
+            "id": "github_mngm:minor",
+            "name": "minor",
+            "repository": "github_mngm",
+            "url": "https://api.github.com/repos/andresmarinabad/github_mngm/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"dc54ea90bf3303874c1cff390fe7d42889a2e2d5cb73a94ef0705dac5f70544b\"",
+            "id": "github_mngm:patch",
+            "name": "patch",
+            "repository": "github_mngm",
+            "url": "https://api.github.com/repos/andresmarinabad/github_mngm/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Terraform project to manage my resources",
+            "etag": "W/\"90b20c0b1966366456128324fceadc9b6ab304bbd1a6d25f3ba6aced22fa79d7\"",
+            "full_name": "andresmarinabad/github_mngm",
+            "git_clone_url": "git://github.com/andresmarinabad/github_mngm.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/github_mngm",
+            "http_clone_url": "https://github.com/andresmarinabad/github_mngm.git",
+            "id": "github_mngm",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "github_mngm",
+            "node_id": "R_kgDOONzgpQ",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/github_mngm/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/github_mngm/pages"
+              }
+            ],
+            "primary_language": "HCL",
+            "private": false,
+            "repo_id": 953999525,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/github_mngm.git",
+            "svn_url": "https://github.com/andresmarinabad/github_mngm",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "github_mngm",
+            "repository": "github_mngm"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.github_mngm",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "7f6af70a4ad95c4582c60691ef1ca67729670d62",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "github_mngm/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "github_mngm",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.github_mngm.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"22b97e0be49071675541e2b63370c946710aad2eab7b75939edbca384eb17eb7\"",
+            "id": "grupos:main",
+            "ref": "refs/heads/main",
+            "repository": "grupos",
+            "sha": "5d0f0569a4058bd8ca470959de85e1dc2af1d3c7",
+            "source_branch": "main",
+            "source_sha": "83923a7dfaac0f0e1a05457a7e94f15c922174ba"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"805ae19f9b41481fbf5eff143e74745504286e81967ae5822db37026eb44ddd7\"",
+            "id": "grupos",
+            "rename": false,
+            "repository": "grupos"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_branch.main",
+            "module.grupos.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"226295413c5362b740551e9fdacdb779e027e02dddb82be7a0fb226f56ee4bd0\"",
+            "id": "grupos:major",
+            "name": "major",
+            "repository": "grupos",
+            "url": "https://api.github.com/repos/Comu10/grupos/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"8c0b21b905059a80ce67da4dce84a4fbdbb353f760f06512664fa295b8c55afc\"",
+            "id": "grupos:minor",
+            "name": "minor",
+            "repository": "grupos",
+            "url": "https://api.github.com/repos/Comu10/grupos/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"49c036fb0b6298b5d9c1ab93c6412436f477594305bc80eb90f8231bef88ead9\"",
+            "id": "grupos:patch",
+            "name": "patch",
+            "repository": "grupos",
+            "url": "https://api.github.com/repos/Comu10/grupos/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "HTML project to publish groups list",
+            "etag": "W/\"805ae19f9b41481fbf5eff143e74745504286e81967ae5822db37026eb44ddd7\"",
+            "full_name": "Comu10/grupos",
+            "git_clone_url": "git://github.com/Comu10/grupos.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/Comu10/grupos",
+            "http_clone_url": "https://github.com/Comu10/grupos.git",
+            "id": "grupos",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "grupos",
+            "node_id": "R_kgDOOVPgSA",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://comu10.github.io/grupos/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/Comu10/grupos/pages"
+              }
+            ],
+            "primary_language": "HTML",
+            "private": false,
+            "repo_id": 961798216,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "disabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "disabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:Comu10/grupos.git",
+            "svn_url": "https://github.com/Comu10/grupos",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "grupos",
+            "repository": "grupos"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.grupos",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].comu",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "5d0f0569a4058bd8ca470959de85e1dc2af1d3c7",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "grupos/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "grupos",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.grupos.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"ef4ebd40569f8672a7313bee81eb2a6787daf6e1b0b7eecd109d7adf25dfa001\"",
+            "id": "photocalendar:main",
+            "ref": "refs/heads/main",
+            "repository": "photocalendar",
+            "sha": "06c33f0d558bc30b3a63b398a3ac553ba24d6e9c",
+            "source_branch": "main",
+            "source_sha": "4adb9f66bcf880767276cf204aa81d6bf76ffbe2"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"af66ea5519888197356b3fd750a258d675a44c7b4a0670bd14c14e16f625b284\"",
+            "id": "photocalendar",
+            "rename": false,
+            "repository": "photocalendar"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_branch.main",
+            "module.photocalendar.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"0509e60f61b128a66fced5f5e103acec55708dc0f27ecd593d46c511b26685bc\"",
+            "id": "photocalendar:major",
+            "name": "major",
+            "repository": "photocalendar",
+            "url": "https://api.github.com/repos/andresmarinabad/photocalendar/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"c8d20298d5b48b982f3d9af07b3eaa91bca8b7a77cdd4f3988a3e45e3e6fbccd\"",
+            "id": "photocalendar:minor",
+            "name": "minor",
+            "repository": "photocalendar",
+            "url": "https://api.github.com/repos/andresmarinabad/photocalendar/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"e3245920caf8698c6f6ca74b8bcbc6aba30f34a06e03e1fdb03d76a14a591e70\"",
+            "id": "photocalendar:patch",
+            "name": "patch",
+            "repository": "photocalendar",
+            "url": "https://api.github.com/repos/andresmarinabad/photocalendar/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Create an A3 pdf photo canlendar with python and LaTeX",
+            "etag": "W/\"af66ea5519888197356b3fd750a258d675a44c7b4a0670bd14c14e16f625b284\"",
+            "full_name": "andresmarinabad/photocalendar",
+            "git_clone_url": "git://github.com/andresmarinabad/photocalendar.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/photocalendar",
+            "http_clone_url": "https://github.com/andresmarinabad/photocalendar.git",
+            "id": "photocalendar",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "photocalendar",
+            "node_id": "R_kgDOOFbZ2g",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/photocalendar/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/photocalendar/pages"
+              }
+            ],
+            "primary_language": "TeX",
+            "private": false,
+            "repo_id": 945215962,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/photocalendar.git",
+            "svn_url": "https://github.com/andresmarinabad/photocalendar",
+            "template": [],
+            "topics": [
+              "latex",
+              "python",
+              "terraform"
+            ],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "photocalendar",
+            "repository": "photocalendar"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.photocalendar",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "06c33f0d558bc30b3a63b398a3ac553ba24d6e9c",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "photocalendar/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "photocalendar",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.photocalendar.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"cb14e28df4f1ee458fd6e9a75feaf68917d7ca634ab46c09e9f2cdf661c705a1\"",
+            "id": "quiniela_quinigol_bot:main",
+            "ref": "refs/heads/main",
+            "repository": "quiniela_quinigol_bot",
+            "sha": "05efe3bb3e78f59b09bb2e3055677813f386c449",
+            "source_branch": "main",
+            "source_sha": "bdffb55f0af47ecc3fe6c67502c41141e8c2d211"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"de07494de379aec91ba36feca12f4d8b206c40adfb06e3c32274b5fd1b52ee72\"",
+            "id": "quiniela_quinigol_bot",
+            "rename": false,
+            "repository": "quiniela_quinigol_bot"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_branch.main",
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"750a028547ecf81627709a81ba40db39f69366495f14f6294ab6420ea2610a12\"",
+            "id": "quiniela_quinigol_bot:major",
+            "name": "major",
+            "repository": "quiniela_quinigol_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/quiniela_quinigol_bot/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"6323ffd3b750a72433ff027538847fe677cccb37ff981a0a3290968b3c6cff5b\"",
+            "id": "quiniela_quinigol_bot:minor",
+            "name": "minor",
+            "repository": "quiniela_quinigol_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/quiniela_quinigol_bot/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"81c8aea1700f4de2d19fe6d9e4d76ac4a912c15c6ca8496fd4d81102218cf988\"",
+            "id": "quiniela_quinigol_bot:patch",
+            "name": "patch",
+            "repository": "quiniela_quinigol_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/quiniela_quinigol_bot/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Python bot for telegram with terraform. Calculates quiniela results for a group of friends",
+            "etag": "W/\"de07494de379aec91ba36feca12f4d8b206c40adfb06e3c32274b5fd1b52ee72\"",
+            "full_name": "andresmarinabad/quiniela_quinigol_bot",
+            "git_clone_url": "git://github.com/andresmarinabad/quiniela_quinigol_bot.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/quiniela_quinigol_bot",
+            "http_clone_url": "https://github.com/andresmarinabad/quiniela_quinigol_bot.git",
+            "id": "quiniela_quinigol_bot",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "quiniela_quinigol_bot",
+            "node_id": "R_kgDOOofqmA",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/quiniela_quinigol_bot/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/quiniela_quinigol_bot/pages"
+              }
+            ],
+            "primary_language": "Python",
+            "private": false,
+            "repo_id": 981985944,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/quiniela_quinigol_bot.git",
+            "svn_url": "https://github.com/andresmarinabad/quiniela_quinigol_bot",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "quiniela_quinigol_bot",
+            "repository": "quiniela_quinigol_bot"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.quinigol_bot",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "05efe3bb3e78f59b09bb2e3055677813f386c449",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "quiniela_quinigol_bot/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "quiniela_quinigol_bot",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.quinigol_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"87f41695967045838995e35c854994fed0a42ea0f21543eee74d01dcd7306795\"",
+            "id": "telegram_bot:main",
+            "ref": "refs/heads/main",
+            "repository": "telegram_bot",
+            "sha": "2b8e7674d5c3ff63d554853a51bc896478b385cd",
+            "source_branch": "main",
+            "source_sha": "d842494c477e155a3016feeccbe7c0300ee4efc1"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"50af2858d9c44a6d5f5561086d68cd25173fefcf518d2ade125e614aaebf4e9a\"",
+            "id": "telegram_bot",
+            "rename": false,
+            "repository": "telegram_bot"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_branch.main",
+            "module.telegram_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"1c36291281dceccdca911336b5cd4e22aaa7f6a6dc9368cb62337c88083dac45\"",
+            "id": "telegram_bot:major",
+            "name": "major",
+            "repository": "telegram_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/telegram_bot/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"f8c2d0db953f0d1b98483ab3a3f68193035fe03aa540743b3773b2c36638f4b2\"",
+            "id": "telegram_bot:minor",
+            "name": "minor",
+            "repository": "telegram_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/telegram_bot/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"44c919d1250fcc8b72ad90f03c6dceab27e2d89649fa70b6fca04be876f403ed\"",
+            "id": "telegram_bot:patch",
+            "name": "patch",
+            "repository": "telegram_bot",
+            "url": "https://api.github.com/repos/andresmarinabad/telegram_bot/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Python bot for telegram with terraform form infra deploy",
+            "etag": "W/\"50af2858d9c44a6d5f5561086d68cd25173fefcf518d2ade125e614aaebf4e9a\"",
+            "full_name": "andresmarinabad/telegram_bot",
+            "git_clone_url": "git://github.com/andresmarinabad/telegram_bot.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/andresmarinabad/telegram_bot",
+            "http_clone_url": "https://github.com/andresmarinabad/telegram_bot.git",
+            "id": "telegram_bot",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "telegram_bot",
+            "node_id": "R_kgDOOdJWzQ",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://andresmarinabad.github.io/telegram_bot/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/andresmarinabad/telegram_bot/pages"
+              }
+            ],
+            "primary_language": "HCL",
+            "private": false,
+            "repo_id": 970086093,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:andresmarinabad/telegram_bot.git",
+            "svn_url": "https://github.com/andresmarinabad/telegram_bot",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "telegram_bot",
+            "repository": "telegram_bot"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.telegram_bot",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "2b8e7674d5c3ff63d554853a51bc896478b385cd",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "telegram_bot/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "telegram_bot",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.telegram_bot.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_branch",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"bf9539c4dfbb659f54cb090612cd73ab0e490e7e8dae98b8d7e5e0b403418a78\"",
+            "id": "tf-modules:main",
+            "ref": "refs/heads/main",
+            "repository": "tf-modules",
+            "sha": "9d6dcac5a4aebf9b2fbd802e9d8dd1560684a32e",
+            "source_branch": "main",
+            "source_sha": "ace978ac5e2c787410aa306ba44f9db0e964a60b"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_branch_default",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "branch": "main",
+            "etag": "W/\"a881ef865aece7daf4cde37e1e3238143c674a242b53d7998ad094ef21269c7d\"",
+            "id": "tf-modules",
+            "rename": false,
+            "repository": "tf-modules"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_branch.main",
+            "module.tf-modules.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_issue_label",
+      "name": "labels",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "index_key": "major",
+          "schema_version": 0,
+          "attributes": {
+            "color": "d73a4a",
+            "description": "Increment major",
+            "etag": "W/\"e4ee4368d3b31ef4ecd41c69bf51bcbb9c93e936726e387f0bd62240af8e1d3a\"",
+            "id": "tf-modules:major",
+            "name": "major",
+            "repository": "tf-modules",
+            "url": "https://api.github.com/repos/CodeForgeGuild/tf-modules/labels/major"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "minor",
+          "schema_version": 0,
+          "attributes": {
+            "color": "fbca04",
+            "description": "Increment minor",
+            "etag": "W/\"907ddfac5c59ac44f5656c27fceb2aff6bf6cc49d9d5ed9a42e0c4e9ce35b206\"",
+            "id": "tf-modules:minor",
+            "name": "minor",
+            "repository": "tf-modules",
+            "url": "https://api.github.com/repos/CodeForgeGuild/tf-modules/labels/minor"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        },
+        {
+          "index_key": "patch",
+          "schema_version": 0,
+          "attributes": {
+            "color": "0e8a16",
+            "description": "Increment patch",
+            "etag": "W/\"9537432acc9e4419a4294b9eb037173f5b3bc9424daab4d9e7d171fca8bdfc31\"",
+            "id": "tf-modules:patch",
+            "name": "patch",
+            "repository": "tf-modules",
+            "url": "https://api.github.com/repos/CodeForgeGuild/tf-modules/labels/patch"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "repository",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": true,
+            "allow_merge_commit": false,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": false,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Terraform modules",
+            "etag": "W/\"a881ef865aece7daf4cde37e1e3238143c674a242b53d7998ad094ef21269c7d\"",
+            "full_name": "CodeForgeGuild/tf-modules",
+            "git_clone_url": "git://github.com/CodeForgeGuild/tf-modules.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/CodeForgeGuild/tf-modules",
+            "http_clone_url": "https://github.com/CodeForgeGuild/tf-modules.git",
+            "id": "tf-modules",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": "mit",
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "tf-modules",
+            "node_id": "R_kgDOQGWz3A",
+            "pages": [
+              {
+                "build_type": "workflow",
+                "cname": "",
+                "custom_404": false,
+                "html_url": "https://codeforgeguild.github.io/tf-modules/",
+                "source": [
+                  {
+                    "branch": "main",
+                    "path": "/"
+                  }
+                ],
+                "status": "",
+                "url": "https://api.github.com/repos/CodeForgeGuild/tf-modules/pages"
+              }
+            ],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 1080407004,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "disabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "disabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:CodeForgeGuild/tf-modules.git",
+            "svn_url": "https://github.com/CodeForgeGuild/tf-modules",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": true,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_repository_dependabot_security_updates",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "enabled": true,
+            "id": "tf-modules",
+            "repository": "tf-modules"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.tf-modules",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "dependabot",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"].guild",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add Dependabot configuration",
+            "commit_sha": "9d6dcac5a4aebf9b2fbd802e9d8dd1560684a32e",
+            "content": "\"updates\":\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"pip\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"terraform\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n- \"directory\": \"/\"\n  \"labels\":\n  - \"patch\"\n  \"open-pull-requests-limit\": 5\n  \"package-ecosystem\": \"github-actions\"\n  \"schedule\":\n    \"interval\": \"monthly\"\n\"version\": 2\n",
+            "file": ".github/dependabot.yml",
+            "id": "tf-modules/.github/dependabot.yml",
+            "overwrite_on_create": false,
+            "ref": "main",
+            "repository": "tf-modules",
+            "sha": "d89d74f353cd6005acd60e202a84ef2fef981673"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.tf-modules.github_repository.repository"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

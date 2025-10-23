@@ -12,7 +12,7 @@ resource "github_repository" "repository" {
   allow_update_branch         = false
   archived                    = false
   auto_init                   = true
-  delete_branch_on_merge      = false
+  delete_branch_on_merge      = true
   has_discussions             = false
   has_downloads               = false
   has_issues                  = var.has_issues
@@ -45,9 +45,9 @@ resource "github_branch_default" "default"{
 
 resource "github_issue_label" "labels" {
   for_each = {
-    "patch" = { color = "0e8a16", description = "Increment patch" }
-    "minor" = { color = "fbca04", description = "Increment minor" }
-    "major" = { color = "d73a4a", description = "Increment major" }
+    "increment-patch" = { color = "1E90FF", description = "Increment patch" }
+    "increment-minor" = { color = "9B59B6", description = "Increment minor" }
+    "increment-major" = { color = "E67E22", description = "Increment major" }
   }
 
   repository  = github_repository.repository.name
@@ -96,6 +96,34 @@ resource "github_repository_file" "dependabot" {
       }
     ]
   })
-  branch      = "main"
+  branch      = github_branch.main.branch
   commit_message = "Add Dependabot configuration"
 }
+
+resource "github_repository_file" "release" {
+  repository     = github_repository.repository.name
+  file           = ".github/workflows/ci-release.yml"
+  branch         = github_branch.main.branch
+  commit_message = "Add ci release action"
+
+  content = <<-EOT
+    name: CI Release Version
+
+    on:
+      pull_request:
+        types: [closed]
+        branches: [main]
+
+    permissions:
+      contents: write
+      pull-requests: read
+
+    jobs:
+      release:
+        if: github.event.pull_request.merged == true
+        uses: CodeForgeGuild/ci-actions/.github/workflows/release.yml@v0
+        secrets:
+          GH_TOKEN: $${{ secrets.GITHUB_TOKEN }}
+  EOT
+}
+
