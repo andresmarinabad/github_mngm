@@ -74,7 +74,7 @@ resource "github_repository_file" "dependabot" {
           interval = "monthly"
         }
         open-pull-requests-limit = 5
-        labels = ["patch"]
+        labels = ["increment-patch"]
       },
       {
         package-ecosystem = "terraform"
@@ -83,7 +83,7 @@ resource "github_repository_file" "dependabot" {
           interval = "monthly"
         }
         open-pull-requests-limit = 5
-        labels = ["patch"]
+        labels = ["increment-patch"]
       },
       {
         package-ecosystem = "github-actions"
@@ -92,7 +92,7 @@ resource "github_repository_file" "dependabot" {
           interval = "monthly"
         }
         open-pull-requests-limit = 5
-        labels = ["patch"]
+        labels = ["increment-patch"]
       }
     ]
   })
