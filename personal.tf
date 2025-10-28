@@ -1,26 +1,26 @@
 module "github_mngm" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "github_mngm"
   description = "Terraform project to manage my resources"
   visibility  = "public"
 }
 
 module "telegram_bot" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "telegram_bot"
   description = "Python bot for telegram with terraform form infra deploy"
   visibility  = "public"
 }
 
 module "quinigol_bot" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "quiniela_quinigol_bot"
   description = "Python bot for telegram with terraform. Calculates quiniela results for a group of friends"
   visibility  = "public"
 }
 
 module "familyprogressweb" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "familyprogressweb"
   description = "Show your kids next birthday within a friendly interface"
   visibility  = "public"
@@ -29,36 +29,29 @@ module "familyprogressweb" {
 }
 
 module "andresmarinabad" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "andresmarinabad"
   description = "My personal portfolio page in GitHub"
   visibility  = "public"
 }
 
 module "FamilyLedger" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "FamilyLedger"
   description = "FamilyLedger is a family accounting app that imports transactions from a CSV file and organizes them into an Excel spreadsheet, grouping expenses by categories to help track and manage the family budget."
   visibility  = "public"
 }
 
 module "photocalendar" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "photocalendar"
   description = "Create an A3 pdf photo canlendar with python and LaTeX"
   visibility  = "public"
 }
 
 module "fotosblog" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "fotosblog"
   description = "Download pictures from my kids blog's school"
   visibility  = "public"
-}
-
-module "bookline-test" {
-  source = "./modules/github"
-  name = "bookline-test"
-  description = "Technical test for bookline"
-  visibility = "public"
 }

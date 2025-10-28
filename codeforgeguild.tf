@@ -1,5 +1,5 @@
 module "tf-modules" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "tf-modules"
   description = "Terraform modules"
   visibility  = "public"
@@ -9,7 +9,7 @@ module "tf-modules" {
 }
 
 module "ci-actions" {
-  source      = "./modules/github"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
   name        = "ci-actions"
   description = "GitHub Actions Catalog"
   visibility  = "public"
