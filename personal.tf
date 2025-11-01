@@ -1,5 +1,5 @@
 module "github_mngm" {
-  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0.1"
   name        = "github_mngm"
   description = "Terraform project to manage my resources"
   visibility  = "public"
