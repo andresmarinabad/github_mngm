@@ -1,5 +1,5 @@
 module "agapes" {
-  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0.1"
   name        = "agapes"
   description = "HTML project to publish agapes list"
   visibility  = "public"
