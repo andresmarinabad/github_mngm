@@ -6,7 +6,7 @@ module "github_mngm" {
 }
 
 module "telegram_bot" {
-  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0.1"
   name        = "telegram_bot"
   description = "Python bot for telegram with terraform form infra deploy"
   visibility  = "public"
