@@ -29,7 +29,7 @@ module "familyprogressweb" {
 }
 
 module "andresmarinabad" {
-  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0"
+  source      = "github.com/CodeForgeGuild/tf-modules//modules/github?ref=v0.1"
   name        = "andresmarinabad"
   description = "My personal portfolio page in GitHub"
   visibility  = "public"
